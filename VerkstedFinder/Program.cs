@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace VerkstedFinder
 {
@@ -6,7 +7,8 @@ namespace VerkstedFinder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Hello World!");
+            WriteLine("HEY");
         }
     }
 }
