@@ -1,0 +1,4 @@
+D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.csprojAssemblyReference.cache
+D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.csproj.CoreCompileInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.AssemblyInfoInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.AssemblyInfo.cs
