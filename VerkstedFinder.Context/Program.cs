@@ -21,7 +21,7 @@ namespace VerkstedFinder.Context
             }
             //Initialize.InitPostNumbers();
             //Initialize.InitializePermission();
-            Initialize.InitializeRoles();
+            //Initialize.InitializeRoles();
             ReadLine();
 
         }

@@ -54,7 +54,7 @@ namespace VerkstedFinder.Context
             }
         }
 
-        public static async Task InitializePermission()
+        public static void InitializePermission()
         {
             WriteLine("Adding permissions...");
             Permission permissionCreate = new Permission(){Perm_name = "Create"};
@@ -65,17 +65,21 @@ namespace VerkstedFinder.Context
 
             using (var db = new AndremiContext())
             {
-                db.Permissions.Add(permissionCreate);
-                db.Permissions.Add(permissionRead);
-                db.Permissions.Add(permissionUpdate);
-                db.Permissions.Add(permissionDelete);
-                db.Permissions.Add(permissionEditUsers);
+                var count = (from o in db.Permissions select o).Count();
+                if (count < 1)
+                {
+                    db.Permissions.Add(permissionCreate);
+                    db.Permissions.Add(permissionRead);
+                    db.Permissions.Add(permissionUpdate);
+                    db.Permissions.Add(permissionDelete);
+                    db.Permissions.Add(permissionEditUsers);
 
-                db.SaveChanges();
+                    db.SaveChanges();
+                }
             }
         }
 
-        public static async Task InitializeRoles()
+        public static void InitializeRoles()
         {
             WriteLine("Adding roles...");
             Role user = new Role(){Name = "User"};
@@ -84,11 +88,15 @@ namespace VerkstedFinder.Context
 
             using (var db = new AndremiContext())
             {
-                db.Roles.Add(user);
-                db.Roles.Add(admin);
-                db.Roles.Add(mod);
+                var count = (from o in db.Roles select o).Count();
+                if (count < 1)
+                {
+                    db.Roles.Add(user);
+                    db.Roles.Add(admin);
+                    db.Roles.Add(mod);
 
-                db.SaveChanges();
+                    db.SaveChanges();
+                }
             }
         }
 

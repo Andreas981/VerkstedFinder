@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VerkstedFinder.Context;
 
 namespace VerkstedFinder.Context.Migrations
 {
     [DbContext(typeof(AndremiContext))]
-    partial class AndremiContextModelSnapshot : ModelSnapshot
+    [Migration("20190228103512_FixedForeignKeys")]
+    partial class FixedForeignKeys
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

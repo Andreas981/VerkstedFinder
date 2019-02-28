@@ -38,6 +38,8 @@ namespace VerkstedFinder.Context
             modelBuilder.HasAnnotation("ProductVersion", "2.2.1-servicing-10028");
 
             modelBuilder.Entity<RolePermission>().HasKey(rp => new { rp.RoleId, rp.PermId });
+            modelBuilder.Entity<RolePermission>().HasOne(rp => rp.Role).WithMany(rp => rp.RolePermissions).HasForeignKey(bc => bc.RoleId);
+            modelBuilder.Entity<RolePermission>().HasOne(rp => rp.Permission).WithMany(rp => rp.RolePermissions).HasForeignKey(bc => bc.PermId);
 
             base.OnModelCreating(modelBuilder);
         
