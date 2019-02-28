@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace VerkstedFinder.Model
 {
     public class Role
     {
-        public int r_id { get; set; }
-        public string prop_name { get; set; }
+
+        [Key]
+        public int RoleId { get; set; }
+        [Required]
+        public string Name { get; set; }
+
+        public IList<RolePermission> RolePermissions { get; set; }
+
+
     }
 }

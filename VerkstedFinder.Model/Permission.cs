@@ -1,12 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace VerkstedFinder.Model
 {
+
     public class Permission
     {
-        public int perm_id { get; set; }
-        public string perm_name { get; set; }
+
+
+        [Key]
+        public int PermId { get; set; }
+        [Required]
+        public string Perm_name { get; set; }
+
+        public IList<RolePermission> RolePermissions { get; set; }
+
+
+
+
+
+        public static void Main(string[] args)
+        {
+
+        }
+
+
     }
 }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace VerkstedFinder.Model
 {
     public class Poststed
     {
-        public int postnr { get; set; }
-        public string poststed { get; set; }
+        [Key]
+        public int Postnr { get; set; }
+        [Required]
+        public string PoststedName { get; set; }
     }
 }

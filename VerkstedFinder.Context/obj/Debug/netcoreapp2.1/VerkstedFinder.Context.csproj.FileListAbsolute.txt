@@ -1,0 +1,14 @@
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Context.deps.json
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Context.runtimeconfig.json
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Context.runtimeconfig.dev.json
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Context.dll
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.csprojAssemblyReference.cache
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.csproj.CoreCompileInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.AssemblyInfoInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.AssemblyInfo.cs
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Context.pdb
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Model.dll
+D:\net\VerkstedFinder\VerkstedFinder.Context\bin\Debug\netcoreapp2.1\VerkstedFinder.Model.pdb
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.csproj.CopyComplete
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.dll
+D:\net\VerkstedFinder\VerkstedFinder.Context\obj\Debug\netcoreapp2.1\VerkstedFinder.Context.pdb
