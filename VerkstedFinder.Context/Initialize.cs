@@ -18,7 +18,8 @@ namespace VerkstedFinder.Context
                 WriteLine("Getting postnumbers...");
 
                 HttpClient client = new HttpClient();
-                string result = await client.GetStringAsync(@"https://raw.githubusercontent.com/Andreas981/VerkstedFinder/master/postnummer.txt");
+                string result = await client.GetStringAsync(@"https://raw.githubusercontent.com/Andreas981/VerkstedFinder/master/postnummer");
+
 
                 client.DefaultRequestHeaders.Add("Accepted-Language", "no");
                 client.DefaultRequestHeaders.Add("Accept-Charset", "utf-8");
@@ -27,8 +28,9 @@ namespace VerkstedFinder.Context
                 {
                     var count = (from o in db.Poststeds select o).Count();
                     //Adding an if statement in case of someone calling the method when the database is alread populated
-                    if (count < 10)
-                    { 
+                    //if (count < 10)
+                    //{
+                        WriteLine("Adding to database...");
                         for (int i = 0; i < result.Split("\n").Length - 1; i++)
                         {
                             for (int j = 0; j < result.Split("\n")[i].Split("|").Length - 1; j++)
@@ -44,7 +46,7 @@ namespace VerkstedFinder.Context
                             }
                         }
                         db.SaveChanges();
-                    }
+                    //}
                 }
 
             }catch(Exception e)

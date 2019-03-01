@@ -43,6 +43,6 @@ namespace VerkstedFinder.Context
 
             base.OnModelCreating(modelBuilder);
         
-    }
+        }
     }
 }

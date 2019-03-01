@@ -14,12 +14,12 @@ namespace VerkstedFinder.Context
                     WriteLine("Adding some post numbers and places");
 
                     var query = db.Poststeds;
-                    /*foreach (var item in query)
+                    foreach (var item in query)
                     {
                         WriteLine(item.Postnr + ", " + item.PoststedName);
-                    }*/
+                    }
             }
-            //Initialize.InitPostNumbers();
+            Initialize.InitPostNumbers();
             //Initialize.InitializePermission();
             //Initialize.InitializeRoles();
             ReadLine();
