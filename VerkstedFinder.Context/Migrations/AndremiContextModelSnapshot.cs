@@ -111,6 +111,9 @@ namespace VerkstedFinder.Context.Migrations
                     b.Property<string>("Ws_name")
                         .IsRequired();
 
+                    b.Property<string>("Ws_orgnumber")
+                        .IsRequired();
+
                     b.HasKey("Ws_id");
 
                     b.HasIndex("Postnr1");

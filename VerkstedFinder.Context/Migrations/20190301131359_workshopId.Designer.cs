@@ -9,8 +9,8 @@ using VerkstedFinder.Context;
 namespace VerkstedFinder.Context.Migrations
 {
     [DbContext(typeof(AndremiContext))]
-    [Migration("20190227111535_IdentityFixForPoststed2")]
-    partial class IdentityFixForPoststed2
+    [Migration("20190301131359_workshopId")]
+    partial class workshopId
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,7 +38,7 @@ namespace VerkstedFinder.Context.Migrations
                 {
                     b.Property<int>("Postnr")
                         .ValueGeneratedOnAdd()
-                        .HasComputedColumnSql("SET IDENTITY_INSERT ON");
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("PoststedName")
                         .IsRequired();
@@ -111,6 +111,9 @@ namespace VerkstedFinder.Context.Migrations
                         .IsRequired();
 
                     b.Property<string>("Ws_name")
+                        .IsRequired();
+
+                    b.Property<string>("Ws_orgnumber")
                         .IsRequired();
 
                     b.HasKey("Ws_id");

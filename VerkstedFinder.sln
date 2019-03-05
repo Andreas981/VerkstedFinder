@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerkstedFinder.Model", "VerkstedFinder.Model\VerkstedFinder.Model.csproj", "{6EEFCA2A-9BF7-4994-8DFD-49C75993FB5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerkstedFinder.Model", "VerkstedFinder.Model\VerkstedFinder.Model.csproj", "{6EEFCA2A-9BF7-4994-8DFD-49C75993FB5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerkstedFinder.Context", "VerkstedFinder.Context\VerkstedFinder.Context.csproj", "{7A5C78BE-ADD8-4E84-AA69-C18989566B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerkstedFinder.Context", "VerkstedFinder.Context\VerkstedFinder.Context.csproj", "{7A5C78BE-ADD8-4E84-AA69-C18989566B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerkstedFinder.Api", "VerkstedFinder.Api\VerkstedFinder.Api.csproj", "{858C0F4B-209D-4104-8ADB-DCB25C53781E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7A5C78BE-ADD8-4E84-AA69-C18989566B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5C78BE-ADD8-4E84-AA69-C18989566B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5C78BE-ADD8-4E84-AA69-C18989566B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858C0F4B-209D-4104-8ADB-DCB25C53781E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858C0F4B-209D-4104-8ADB-DCB25C53781E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858C0F4B-209D-4104-8ADB-DCB25C53781E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858C0F4B-209D-4104-8ADB-DCB25C53781E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

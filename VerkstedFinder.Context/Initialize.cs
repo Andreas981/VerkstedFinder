@@ -28,8 +28,8 @@ namespace VerkstedFinder.Context
                 {
                     var count = (from o in db.Poststeds select o).Count();
                     //Adding an if statement in case of someone calling the method when the database is alread populated
-                    //if (count < 10)
-                    //{
+                    if (count < 10)
+                    {
                         WriteLine("Adding to database...");
                         for (int i = 0; i < result.Split("\n").Length - 1; i++)
                         {
@@ -46,7 +46,7 @@ namespace VerkstedFinder.Context
                             }
                         }
                         db.SaveChanges();
-                    //}
+                    }
                 }
 
             }catch(Exception e)
@@ -54,6 +54,54 @@ namespace VerkstedFinder.Context
                 WriteLine("Sorry, could not find the postnumber file");
                 WriteLine(e.StackTrace);
             }
+        }
+        
+        public static async Task InitializeWorkshops()
+        {
+            WriteLine("Getting workshops...");
+            HttpClient client = new HttpClient();
+            string result = await client.GetStringAsync(@"https://raw.githubusercontent.com/Andreas981/VerkstedFinder/master/verksted");
+
+            client.DefaultRequestHeaders.Add("Accepted-Language", "no");
+            client.DefaultRequestHeaders.Add("Accept-Charset", "utf-8");
+
+            using (var db = new AndremiContext())
+            {
+                WriteLine("Adding to database...");
+                for(int i = 5001; i < result.Split("\n").Length-1; i++)
+                {
+                    WriteLine(result.Split("\n")[i]);
+                    string[] data = new string[6];
+                    for(int j = 0; j < result.Split("\n")[i].Split(";").Length; j++)
+                    {
+                        data[j] = result.Split("\n")[i].Split(";")[j];
+                    }
+                    Poststed poststed = db.Poststeds.FirstOrDefault(p => p.Postnr == Convert.ToInt32(data[2]));
+                    WriteLine(poststed);
+
+                    Workshop workshop = new Workshop()
+                    {
+                        Ws_name = data[0],
+                        Ws_address = data[1],
+                        Ws_orgnumber = data[5]
+                    };
+                    workshop.Postnr = poststed;
+
+                    if(poststed != null)
+                        db.Workshops.Add(workshop);
+
+                    WriteLine("Added");
+                    if(i == 5500)
+                    {
+                        break;
+                    }
+                }
+                WriteLine("Saving...");
+
+                db.SaveChanges();
+                WriteLine("Finished");
+            }
+
         }
 
         public static void InitializePermission()

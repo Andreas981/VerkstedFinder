@@ -9,7 +9,7 @@ namespace VerkstedFinder.Context
             WriteLine("Press [ENTER] to continue");
             ReadLine();
 
-            using (var db = new AndremiContext())
+            /*using (var db = new AndremiContext())
             {
                     WriteLine("Adding some post numbers and places");
 
@@ -18,10 +18,11 @@ namespace VerkstedFinder.Context
                     {
                         WriteLine(item.Postnr + ", " + item.PoststedName);
                     }
-            }
-            Initialize.InitPostNumbers();
+            }*/
+            //Initialize.InitPostNumbers();
             //Initialize.InitializePermission();
             //Initialize.InitializeRoles();
+            Initialize.InitializeWorkshops();
             ReadLine();
 
         }

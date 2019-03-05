@@ -9,8 +9,8 @@ using VerkstedFinder.Context;
 namespace VerkstedFinder.Context.Migrations
 {
     [DbContext(typeof(AndremiContext))]
-    [Migration("20190228103512_FixedForeignKeys")]
-    partial class FixedForeignKeys
+    [Migration("20190301131131_keyFixForWorkshop")]
+    partial class keyFixForWorkshop
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -111,6 +111,9 @@ namespace VerkstedFinder.Context.Migrations
                         .IsRequired();
 
                     b.Property<string>("Ws_name")
+                        .IsRequired();
+
+                    b.Property<string>("Ws_orgnumber")
                         .IsRequired();
 
                     b.HasKey("Ws_id");
