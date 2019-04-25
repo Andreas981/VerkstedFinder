@@ -13,6 +13,6 @@ namespace VerkstedFinder.Model
         [Required]
         public string Ws_address { get; set; }
         [Required]
-        public Poststed Postnr { get; set; }
+        public Poststed Ws_poststed { get; set; }
     }
 }

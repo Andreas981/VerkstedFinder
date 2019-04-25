@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+
+using VerkstedFinder.Context;
 
 namespace VerkstedFinder.Api
 {
@@ -25,6 +22,8 @@ namespace VerkstedFinder.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            var connection = @"Server=Donau.hiof.no;Database=andremi;user id=andremi;pwd=WteZqW6T;";
+            services.AddDbContext<AndremiContext>(opt => opt.UseSqlServer(connection, b => b.MigrationsAssembly("VerkstedFinder.Api")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,7 +33,12 @@ namespace VerkstedFinder.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
+            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

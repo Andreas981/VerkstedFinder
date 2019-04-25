@@ -1,10 +1,13 @@
-﻿using static System.Console;
-using System.Threading.Tasks;
-using System.Text;
-using System.Net.Http;
+﻿using System;
 using System.Linq;
-using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+
+using static System.Console;
+
 using VerkstedFinder.Model;
+
 namespace VerkstedFinder.Context
 {
     class Initialize
@@ -85,7 +88,7 @@ namespace VerkstedFinder.Context
                         Ws_address = data[1],
                         Ws_orgnumber = data[5]
                     };
-                    workshop.Postnr = poststed;
+                    workshop.Ws_poststed = poststed;
 
                     if(poststed != null)
                         db.Workshops.Add(workshop);
@@ -102,32 +105,7 @@ namespace VerkstedFinder.Context
                 WriteLine("Finished");
             }
 
-        }
-
-        public static void InitializePermission()
-        {
-            WriteLine("Adding permissions...");
-            Permission permissionCreate = new Permission(){Perm_name = "Create"};
-            Permission permissionRead = new Permission(){Perm_name = "Read"};
-            Permission permissionUpdate = new Permission(){Perm_name = "Update"};
-            Permission permissionDelete = new Permission(){Perm_name = "Delete"};
-            Permission permissionEditUsers = new Permission(){Perm_name = "Edit Users"};
-
-            using (var db = new AndremiContext())
-            {
-                var count = (from o in db.Permissions select o).Count();
-                if (count < 1)
-                {
-                    db.Permissions.Add(permissionCreate);
-                    db.Permissions.Add(permissionRead);
-                    db.Permissions.Add(permissionUpdate);
-                    db.Permissions.Add(permissionDelete);
-                    db.Permissions.Add(permissionEditUsers);
-
-                    db.SaveChanges();
-                }
-            }
-        }
+        } 
 
         public static void InitializeRoles()
         {

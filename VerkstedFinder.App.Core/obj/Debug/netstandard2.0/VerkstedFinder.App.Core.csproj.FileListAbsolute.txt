@@ -1,0 +1,12 @@
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\VerkstedFinder.App.Core.deps.json
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\VerkstedFinder.App.Core.dll
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\VerkstedFinder.App.Core.pdb
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.csproj.CoreCompileInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.AssemblyInfoInputs.cache
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.AssemblyInfo.cs
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.dll
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.pdb
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.csproj.CopyComplete
+D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.csprojAssemblyReference.cache

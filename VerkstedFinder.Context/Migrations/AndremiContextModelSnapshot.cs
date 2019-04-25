@@ -18,20 +18,6 @@ namespace VerkstedFinder.Context.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("VerkstedFinder.Model.Permission", b =>
-                {
-                    b.Property<int>("PermId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Perm_name")
-                        .IsRequired();
-
-                    b.HasKey("PermId");
-
-                    b.ToTable("Permissions");
-                });
-
             modelBuilder.Entity("VerkstedFinder.Model.Poststed", b =>
                 {
                     b.Property<int>("Postnr")
@@ -60,19 +46,6 @@ namespace VerkstedFinder.Context.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("VerkstedFinder.Model.RolePermission", b =>
-                {
-                    b.Property<int>("RoleId");
-
-                    b.Property<int>("PermId");
-
-                    b.HasKey("RoleId", "PermId");
-
-                    b.HasIndex("PermId");
-
-                    b.ToTable("RolePermissions");
-                });
-
             modelBuilder.Entity("VerkstedFinder.Model.User", b =>
                 {
                     b.Property<int>("User_id")
@@ -83,6 +56,9 @@ namespace VerkstedFinder.Context.Migrations
                         .IsRequired();
 
                     b.Property<string>("User_lastname")
+                        .IsRequired();
+
+                    b.Property<string>("User_password")
                         .IsRequired();
 
                     b.Property<int>("User_roleRoleId");
@@ -103,8 +79,6 @@ namespace VerkstedFinder.Context.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Postnr1");
-
                     b.Property<string>("Ws_address")
                         .IsRequired();
 
@@ -114,24 +88,13 @@ namespace VerkstedFinder.Context.Migrations
                     b.Property<string>("Ws_orgnumber")
                         .IsRequired();
 
+                    b.Property<int>("Ws_poststedPostnr");
+
                     b.HasKey("Ws_id");
 
-                    b.HasIndex("Postnr1");
+                    b.HasIndex("Ws_poststedPostnr");
 
                     b.ToTable("Workshops");
-                });
-
-            modelBuilder.Entity("VerkstedFinder.Model.RolePermission", b =>
-                {
-                    b.HasOne("VerkstedFinder.Model.Permission", "Permission")
-                        .WithMany("RolePermissions")
-                        .HasForeignKey("PermId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("VerkstedFinder.Model.Role", "Role")
-                        .WithMany("RolePermissions")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("VerkstedFinder.Model.User", b =>
@@ -144,9 +107,9 @@ namespace VerkstedFinder.Context.Migrations
 
             modelBuilder.Entity("VerkstedFinder.Model.Workshop", b =>
                 {
-                    b.HasOne("VerkstedFinder.Model.Poststed", "Postnr")
+                    b.HasOne("VerkstedFinder.Model.Poststed", "Ws_poststed")
                         .WithMany()
-                        .HasForeignKey("Postnr1")
+                        .HasForeignKey("Ws_poststedPostnr")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

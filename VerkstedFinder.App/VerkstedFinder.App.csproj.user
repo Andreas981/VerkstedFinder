@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>D:\net\Excercise 5\logo%27.png</Source>
+    <SmallTileSource>D:\net\Excercise 5\logo%27.png</SmallTileSource>
+    <MediumTileSource>D:\net\Excercise 5\logo%27.png</MediumTileSource>
+    <WideTileSource>D:\net\Excercise 5\logo%27.png</WideTileSource>
+    <LargeTileSource>D:\net\Excercise 5\logo%27.png</LargeTileSource>
+    <AppIconSource>D:\net\Excercise 5\logo%27.png</AppIconSource>
+    <PackageLogoSource>D:\net\Excercise 5\logo%27.png</PackageLogoSource>
+    <SplashScreenSource>D:\net\Excercise 5\logo.png</SplashScreenSource>
+  </PropertyGroup>
+</Project>

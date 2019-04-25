@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="VerkstedFinder.App.Views.SignInViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid
+            Background="#fff">
+            <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                Place your content here.-->
+            <Image Source="ms-appx:///Assets/SplashScreen.png" Width="600" Height="400" VerticalAlignment="Top" Margin="0,25,0,0"/>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="Auto">
+                <TextBox x:Name="signin_username" Header="Username:" Margin="0,0,0,12.5" PlaceholderText="Username" Width="350" HorizontalAlignment="center" BorderBrush="#0f57c4"/>
+                <TextBox x:Name="signin_password" Header="Password:" Margin="0,12.5,0,25" PlaceholderText="Password" Width="350" HorizontalAlignment="Center" BorderBrush="#0f57c4"/>
+                <Button x:Name="signin_button" Content="Sing in" Margin="0" Width="175" HorizontalAlignment="Center" Background="#0f57c4" Foreground="#fff" Click="onButtonCLickEvent" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

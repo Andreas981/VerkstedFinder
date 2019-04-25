@@ -1,0 +1,1 @@
+D:\net\VerkstedFinder\VerkstedFinder.App\VerkstedFinder.App.csproj;x86

@@ -1,5 +1,7 @@
 ﻿using System;
+
 using static System.Console;
+
 namespace VerkstedFinder.Context
 {
     class Program
@@ -22,7 +24,7 @@ namespace VerkstedFinder.Context
             //Initialize.InitPostNumbers();
             //Initialize.InitializePermission();
             //Initialize.InitializeRoles();
-            Initialize.InitializeWorkshops();
+            //Initialize.InitializeWorkshops();
             ReadLine();
 
         }

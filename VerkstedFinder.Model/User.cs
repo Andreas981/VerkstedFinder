@@ -13,6 +13,9 @@ namespace VerkstedFinder.Model
         [Required]
         public string User_username { get; set; }
         [Required]
+        public string User_password { get; set; }
+        [Required]
         public Role User_role { get; set; }
+        //Comment
     }
 }

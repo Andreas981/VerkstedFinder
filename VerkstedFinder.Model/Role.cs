@@ -11,7 +11,12 @@ namespace VerkstedFinder.Model
         [Required]
         public string Name { get; set; }
 
-        public IList<RolePermission> RolePermissions { get; set; }
+
+
+        static void Main()
+        {
+
+        }
 
 
     }
