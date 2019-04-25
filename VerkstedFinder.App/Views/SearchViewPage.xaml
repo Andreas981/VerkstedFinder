@@ -11,24 +11,25 @@
     Loaded="SearchViewPage_LoadedAsync"
     x:Name="page">
     <ListBox x:Name="PoststedList" Width="Auto" Margin="{StaticResource MediumLeftRightMargin}" HorizontalAlignment="Right" VerticalAlignment="Top" ItemsSource="{x:Bind ViewModel.Workshops}" Height="Auto">
-            <ListBox.ItemTemplate>
+        <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="model:Workshop">
-                    <Grid Height="40" Width="860">
+                    <Grid Height="40" Width="Auto">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="250"/>
-                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="170"/>
+                            <ColumnDefinition Width="170"/>
                             <ColumnDefinition Width="170"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="35"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.ColumnSpan="1" HorizontalAlignment="Left" Margin="0, 0, 0, 0" VerticalAlignment="Top" TextWrapping="Wrap" Text="{x:Bind Ws_name}"/>
-                        <!--<TextBlock Name="Poststed" Grid.Column="1" HorizontalAlignment="Left" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="15, 0, 0, 0" TextWrapping="Wrap" Text="{Binding Source={x:Bind Postnr}, Path=PoststedName, Mode=OneWay}"/>-->
-                        <TextBlock Name="Poststed" Grid.Column="1" HorizontalAlignment="Left" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="15, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_orgnumber}"/>
-                        <TextBlock Grid.Column="2" VerticalAlignment="Top" Margin="20, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_address}"/>
-                        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="20, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Postnr1}"/>
-                        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="20, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Postnr1.Postnr}"/>
-                        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="20, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Postnr1.PoststedName}"/>
+                        
+                        <TextBlock Grid.ColumnSpan="1" HorizontalTextAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="{x:Bind Ws_name}"/>
+                        <TextBlock Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Orgnumber" Grid.ColumnSpan="1"  Margin="0, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_orgnumber}"/>
+                        <TextBlock Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_address}"/>
+                        <TextBlock Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_poststed.Postnr}"/>
+                        <TextBlock Grid.Column="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap" Text="{x:Bind Ws_poststed.PoststedName}"/>
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

@@ -14,5 +14,7 @@ namespace VerkstedFinder.Model
         public string Ws_address { get; set; }
         [Required]
         public Poststed Ws_poststed { get; set; }
+
+        //Comment
     }
 }

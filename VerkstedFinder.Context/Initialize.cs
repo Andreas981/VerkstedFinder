@@ -31,7 +31,7 @@ namespace VerkstedFinder.Context
                 {
                     var count = (from o in db.Poststeds select o).Count();
                     //Adding an if statement in case of someone calling the method when the database is alread populated
-                    if (count < 10)
+                    if (count < 1)
                     {
                         WriteLine("Adding to database...");
                         for (int i = 0; i < result.Split("\n").Length - 1; i++)
@@ -48,11 +48,13 @@ namespace VerkstedFinder.Context
                                 db.Poststeds.Add(poststed);
                             }
                         }
-                        db.SaveChanges();
                     }
+                    db.SaveChanges();
                 }
 
-            }catch(Exception e)
+
+            }
+            catch(Exception e)
             {
                 WriteLine("Sorry, could not find the postnumber file");
                 WriteLine(e.StackTrace);
@@ -71,7 +73,7 @@ namespace VerkstedFinder.Context
             using (var db = new AndremiContext())
             {
                 WriteLine("Adding to database...");
-                for(int i = 5001; i < result.Split("\n").Length-1; i++)
+                for(int i = 3001; i < result.Split("\n").Length-1; i++)
                 {
                     WriteLine(result.Split("\n")[i]);
                     string[] data = new string[6];
@@ -93,11 +95,7 @@ namespace VerkstedFinder.Context
                     if(poststed != null)
                         db.Workshops.Add(workshop);
 
-                    WriteLine("Added");
-                    if(i == 5500)
-                    {
-                        break;
-                    }
+                   
                 }
                 WriteLine("Saving...");
 
@@ -106,27 +104,6 @@ namespace VerkstedFinder.Context
             }
 
         } 
-
-        public static void InitializeRoles()
-        {
-            WriteLine("Adding roles...");
-            Role user = new Role(){Name = "User"};
-            Role admin = new Role(){Name = "Admin"};
-            Role mod = new Role(){Name = "Moderator"};
-
-            using (var db = new AndremiContext())
-            {
-                var count = (from o in db.Roles select o).Count();
-                if (count < 1)
-                {
-                    db.Roles.Add(user);
-                    db.Roles.Add(admin);
-                    db.Roles.Add(mod);
-
-                    db.SaveChanges();
-                }
-            }
-        }
 
     }
 }

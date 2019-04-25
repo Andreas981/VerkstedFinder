@@ -7,10 +7,10 @@ namespace VerkstedFinder.Context
     public partial class AndremiContext : DbContext
     {
 
-        public DbSet<Poststed> Poststeds { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Workshop> Workshops { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Poststed> Poststeds { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
 
         public AndremiContext()

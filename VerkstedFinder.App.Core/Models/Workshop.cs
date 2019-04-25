@@ -1,5 +1,4 @@
-﻿
-namespace VerkstedFinder.App.Core.Models
+﻿namespace VerkstedFinder.App.Core.Models
 {
     public class Workshop
     {
@@ -7,6 +6,6 @@ namespace VerkstedFinder.App.Core.Models
         public string Ws_name { get; set; }
         public string Ws_orgnumber { get; set; }
         public string Ws_address { get; set; }
-        public Poststed Postnr1 { get; set; }
+        public Poststed Ws_poststed { get; set; }
     }
 }

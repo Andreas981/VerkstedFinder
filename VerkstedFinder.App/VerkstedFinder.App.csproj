@@ -112,6 +112,7 @@
     <Compile Include="Activation\ActivationHandler.cs" />
     <Compile Include="Behaviors\NavigationViewHeaderBehavior.cs" />
     <Compile Include="Behaviors\NavigationViewHeaderMode.cs" />
+    <Compile Include="DataAccess\Poststeds.cs" />
     <Compile Include="DataAccess\Users.cs" />
     <Compile Include="DataAccess\Workshops.cs" />
     <Compile Include="Helpers\NavHelper.cs" />

@@ -19,7 +19,7 @@ namespace VerkstedFinder.App.Views
         private async void SearchViewPage_LoadedAsync(object sender, RoutedEventArgs e)
         {
           
-            await ViewModel.LoadPoststedsAsync();
+            await ViewModel.LoadWorkshopsAsync();
             
         }
     }

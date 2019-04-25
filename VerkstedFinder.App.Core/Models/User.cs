@@ -1,5 +1,4 @@
-﻿
-namespace VerkstedFinder.App.Core.Models
+﻿namespace VerkstedFinder.App.Core.Models
 {
     public class User
     {
@@ -9,6 +8,5 @@ namespace VerkstedFinder.App.Core.Models
         public string User_username { get; set; }
         public string User_password { get; set; }
         public Role User_role { get; set; }
-        //Comment
     }
 }

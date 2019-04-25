@@ -1,5 +1,4 @@
-﻿
-namespace VerkstedFinder.App.Core.Models
+﻿namespace VerkstedFinder.App.Core.Models
 {
     public class Poststed
     {

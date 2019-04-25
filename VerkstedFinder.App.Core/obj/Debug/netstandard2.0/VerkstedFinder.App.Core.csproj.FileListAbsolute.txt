@@ -9,4 +9,3 @@ D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedF
 D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
 D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.csproj.CopyComplete
-D:\net\VerkstedFinder\VerkstedFinder.App.Core\obj\Debug\netstandard2.0\VerkstedFinder.App.Core.csprojAssemblyReference.cache
