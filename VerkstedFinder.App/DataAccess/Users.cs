@@ -16,7 +16,7 @@ namespace VerkstedFinder.App.DataAccess
 
         public async Task<User[]> GetUsersAsync()
         {
-            HttpResponseMessage result = await _httpClient.GetAsync(poststesBaseUri);
+            var result = await _httpClient.GetAsync(poststesBaseUri);
             string json = await result.Content.ReadAsStringAsync();
             User[] users = JsonConvert.DeserializeObject<User[]>(json);
 

@@ -6,6 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
+
     <Grid
         x:Name="ContentArea"
         Margin="{StaticResource MediumLeftRightMargin}">
@@ -17,7 +18,8 @@
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="Auto">
                 <TextBox x:Name="signin_username" Header="Username:" Margin="0,0,0,12.5" PlaceholderText="Username" Width="350" HorizontalAlignment="center" BorderBrush="#0f57c4"/>
                 <TextBox x:Name="signin_password" Header="Password:" Margin="0,12.5,0,25" PlaceholderText="Password" Width="350" HorizontalAlignment="Center" BorderBrush="#0f57c4"/>
-                <Button x:Name="signin_button" Content="Sing in" Margin="0" Width="175" HorizontalAlignment="Center" Background="#0f57c4" Foreground="#fff" Click="onButtonCLickEvent" />
+                <Button x:Name="signin_button" Content="Sing in" Margin="0" Width="175" HorizontalAlignment="Center" Background="#0f57c4" Foreground="#fff" Click="onButtonCLickEvent"/>
+                <TextBlock x:Name="MessageBox" Text="Functionality not implemented!!" Foreground="Red" HorizontalAlignment="Center" Margin="0, 20" FontWeight="Bold" FontSize="20" />
             </StackPanel>
         </Grid>
     </Grid>

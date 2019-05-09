@@ -13,7 +13,8 @@
         <maps:MapControl x:ConnectionId='2'
             x:Name="mapControl"
                                                                  
-                                                           />
+                                                           
+            MapServiceToken="3ZAPKmSaV55IrsGY8qH4~qRE5FBVg9IP_87qL1f1lsQ~AsNNBALjhJ94ZepjCEJnm1CTuGJCTDUdBqdEHWQX9awz7qC5pFWE4lEOvRnRFtv0"/>
         <TickBar/>
     </Grid>
 </Page>

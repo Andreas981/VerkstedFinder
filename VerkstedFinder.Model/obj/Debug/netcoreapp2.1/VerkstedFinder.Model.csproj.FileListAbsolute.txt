@@ -8,3 +8,4 @@ D:\net\VerkstedFinder\VerkstedFinder.Model\bin\Debug\netcoreapp2.1\VerkstedFinde
 D:\net\VerkstedFinder\VerkstedFinder.Model\bin\Debug\netcoreapp2.1\VerkstedFinder.Model.pdb
 D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.dll
 D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.pdb
+D:\net\VerkstedFinder\VerkstedFinder.Model\obj\Debug\netcoreapp2.1\VerkstedFinder.Model.csprojAssemblyReference.cache

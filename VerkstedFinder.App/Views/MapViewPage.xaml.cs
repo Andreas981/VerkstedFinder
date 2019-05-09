@@ -14,6 +14,8 @@ namespace VerkstedFinder.App.Views
         public MapViewPage()
         {
             InitializeComponent();
+            //ViewModel.getWorkshopsAsync();
+
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)

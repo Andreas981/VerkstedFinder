@@ -40,7 +40,7 @@ namespace VerkstedFinder.App.ViewModels
                     Ws_id = workshops[i].Ws_id,
                     Ws_name = workshops[i].Ws_name,
                     Ws_orgnumber = workshops[i].Ws_orgnumber,
-                    Ws_poststed = Poststeds[0]
+                    Ws_poststed = Poststeds[5000]
                 });
                 
             }

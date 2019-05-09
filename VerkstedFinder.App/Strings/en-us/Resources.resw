@@ -146,7 +146,7 @@
     <comment>Navigation view item name for SearchView</comment>
   </data>
   <data name="Shell_SignInView.Content" xml:space="preserve">
-    <value>Sign In</value>
+    <value>Sign In/Out</value>
     <comment>Navigation view item name for SignInView</comment>
   </data>
 </root>

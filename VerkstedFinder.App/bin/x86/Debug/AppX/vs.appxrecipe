@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-25T16:11:23.165</Modified>
+      <Modified>2019-05-09T09:37:06.557</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\VerkstedFinder.App.exe">
       <PackagePath>entrypoint\VerkstedFinder.App.exe</PackagePath>
-      <Modified>2019-04-25T16:11:21.170</Modified>
+      <Modified>2019-05-08T13:32:37.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\amika\.nuget\packages\microsoft.toolkit.uwp.ui.controls.datagrid\5.0.0\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll</PackagePath>
@@ -712,7 +712,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App.Core\bin\Debug\netstandard2.0\VerkstedFinder.App.Core.dll">
       <PackagePath>VerkstedFinder.App.Core.dll</PackagePath>
-      <Modified>2019-04-25T14:50:18.121</Modified>
+      <Modified>2019-05-07T10:05:00.811</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -957,51 +957,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\VerkstedFinder.App.xr.xml">
       <PackagePath>VerkstedFinder.App.xr.xml</PackagePath>
-      <Modified>2019-04-25T16:11:20.229</Modified>
+      <Modified>2019-05-08T13:32:37.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.307</Modified>
+      <Modified>2019-05-09T09:37:00.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.301</Modified>
+      <Modified>2019-05-09T09:37:00.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.302</Modified>
+      <Modified>2019-05-09T09:37:00.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.303</Modified>
+      <Modified>2019-05-09T09:37:00.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.304</Modified>
+      <Modified>2019-05-09T09:37:00.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.306</Modified>
+      <Modified>2019-05-09T09:37:00.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.308</Modified>
+      <Modified>2019-05-09T09:37:00.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Views\MapViewPage.xbf">
       <PackagePath>Views\MapViewPage.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.309</Modified>
+      <Modified>2019-05-09T09:37:00.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Views\SearchViewPage.xbf">
       <PackagePath>Views\SearchViewPage.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.310</Modified>
+      <Modified>2019-05-09T09:37:00.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Views\ShellPage.xbf">
       <PackagePath>Views\ShellPage.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.311</Modified>
+      <Modified>2019-05-09T09:37:00.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Views\SignInViewPage.xbf">
       <PackagePath>Views\SignInViewPage.xbf</PackagePath>
-      <Modified>2019-04-25T16:11:20.314</Modified>
+      <Modified>2019-05-09T09:37:00.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17763.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -1029,11 +1029,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-25T15:24:31.360</Modified>
+      <Modified>2019-05-09T09:37:04.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\net\VerkstedFinder\VerkstedFinder.App\bin\x86\Debug\Core\VerkstedFinder.App.exe">
       <PackagePath>VerkstedFinder.App.exe</PackagePath>
-      <Modified>2019-04-25T16:11:23.149</Modified>
+      <Modified>2019-05-09T09:37:06.539</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

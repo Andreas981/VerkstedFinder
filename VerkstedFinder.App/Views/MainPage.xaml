@@ -13,6 +13,13 @@
             Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
                 Place your content here.-->
+            <StackPanel x:Name="BeforeSignIn">
+                <Image Source="ms-appx:///Assets/SplashScreen.png" Width="800" Height="400" VerticalAlignment="Top" Margin="0,25,0,0"/>
+                <TextBlock x:Name="MessageBoxBeforeSignIn" Text="You have to sign in before accessing this page" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 20" FontWeight="Bold" FontSize="40"  />
+            </StackPanel>
+            <StackPanel x:Name="AfterSignIn" Visibility="Collapsed">
+                <TextBlock x:Name="MessageBoxAfterSignIn" Text="You are signed in" Foreground="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 20" FontWeight="Bold" FontSize="40"  />
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

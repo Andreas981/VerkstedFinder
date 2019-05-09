@@ -11,28 +11,28 @@
                                        
     x:Name="page">
     <ListBox x:ConnectionId='2' x:Name="PoststedList" Width="Auto" Margin="{StaticResource MediumLeftRightMargin}" HorizontalAlignment="Right" VerticalAlignment="Top"                                            Height="Auto">
-            <ListBox.ItemTemplate>
-                <DataTemplate                            >
-                    <Grid x:ConnectionId='3' Height="40" Width="Auto">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="200"/>
-                            <ColumnDefinition Width="30"/>
-                            <ColumnDefinition Width="170"/>
-                            <ColumnDefinition Width="170"/>
-                            <ColumnDefinition Width="170"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="35"/>
-                        </Grid.RowDefinitions>
-                        
-                        <TextBlock x:ConnectionId='4' Grid.Column="1" HorizontalAlignment="Left" Width="500" HorizontalTextAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"                        />
-                        <TextBlock x:ConnectionId='5' Grid.Column="2" HorizontalAlignment="Left" Name="Orgnumber" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                             />
-                        <TextBlock x:ConnectionId='6' Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                           />
-                        <TextBlock x:ConnectionId='7' Grid.Column="4" HorizontalAlignment="Left" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                                   />
-                        <TextBlock x:ConnectionId='8' Grid.Column="5" HorizontalAlignment="Left" Grid.ColumnSpan="1" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                                         />
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <ListBox.ItemTemplate>
+            <DataTemplate                            >
+                <Grid x:ConnectionId='3' Height="40" Width="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="170"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock x:ConnectionId='4' Grid.ColumnSpan="1" HorizontalTextAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"                        />
+                    <TextBlock x:ConnectionId='5' Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Name="Orgnumber" Grid.ColumnSpan="1"  Margin="0, 0, 0, 0" TextWrapping="Wrap"                             />
+                    <TextBlock x:ConnectionId='6' Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                           />
+                    <TextBlock x:ConnectionId='7' Grid.Column="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                                   />
+                    <TextBlock x:ConnectionId='8' Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0, 0, 0, 0" TextWrapping="Wrap"                                         />
+                </Grid>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
 </Page>
 

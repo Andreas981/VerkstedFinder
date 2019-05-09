@@ -13,44 +13,27 @@ namespace VerkstedFinder.App.ViewModels
     {
 
         private Users userDataAccess = new Users();
-        public IList<User> Users { get; set; } = new List<User>();
+        public UserSession userSession = new UserSession();
 
         public SignInViewViewModel()
         {
         }
 
-        public async Task<Boolean> signInAsync(string username, string password)
+        public async Task signInAsync(string username, string password)
         {
-            if(username != "" && password != "")
-            {
-                await LoadUsersAsync();
-                var usernameReuslt = from s in Users
-                             where s.User_username == username
-                             select s;
-                if(usernameReuslt == null)
-                {
-                    return false;
-                }
-                var passwordResult = from s in Users
-                                     where s.User_username == username
-                                     select s.User_password;
-                if (passwordResult.Equals(password))
-                    return true;
-            }
-            return false;
-        }
+            User[] users = await userDataAccess.GetUsersAsync();
+            var foundUser = users.FirstOrDefault(u => u.User_username == username);
 
-        private async Task LoadUsersAsync()
-        {
-            var users = await userDataAccess.GetUsersAsync();
-            //for (int i = 0; i < 1000; i++)
-            //    Poststeds.Add(poststeds[i]);
-
-            foreach (User user in users)
+            if (foundUser == null)
             {
-                Users.Add(user);
+                userSession.setCurrentSignInUser(null);
+                return;
             }
 
+            if (foundUser.User_username == username && foundUser.User_password == password)
+            {
+                userSession.setCurrentSignInUser(foundUser);
+            }
         }
 
     }
