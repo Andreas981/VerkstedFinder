@@ -1,9 +1,9 @@
 # VerkstedFinder
 
 Project description for project in ITF11012 .NET
-Name: Andreas Mikalsen
-Student number: 173040
+
 Project title: Workshop Finder
+
 Requirements:
 - To get the full potential of the application you need to sign in as an administrator. If you register
 through the application you will register as a user, therefor there is not possible to register as an
@@ -24,6 +24,8 @@ many workshops I risk to need to upgrade to a payed plan. However, you should be
 new workshops without exceeding the limit. It will return the correct position in 90% of the
 time. If you don’t see your newly added location in the map, then you may need to restart it.
 This would be a bug fix for further development.
+
+
 Description:
 The application is made to have a list of all certified workshops in Norway, in addition to the once the
 users would create. In the map sections of the application, you will be able to see the location off all
