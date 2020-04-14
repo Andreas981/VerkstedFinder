@@ -8,15 +8,15 @@ Requirements:
 - To get the full potential of the application you need to sign in as an administrator. If you register
 through the application you will register as a user, therefor there is not possible to register as an
 administrator yourself.
-Administrator details:
-Username: admin
-Password: password
+
+
 - To use the application, you need to be connected to the HiOf internet directly or via VPN. The
 application uses the Donau database and won’t work without the schools internet.
 - The log files are created in installation folder for the application, the path should be:
 o C:\Users\~Username~\AppData\Local\Packages\3B9DE111-3FDE-413B-A484-
 FEC6D23D3500_sd040xvzwhp5g\LocalState\~Todays Date~_Logs.txt
 It will create a new log file for every day, and append to that file
+
 Not fully completed parts:
 - The map part is part functional. I have not put in all of the markers for the workshops, but this is
 due to limitations of the API I’m using. It’s the Geocode API from Google, but since there is so
