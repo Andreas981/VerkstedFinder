@@ -4,12 +4,20 @@ Project description for project in ITF11012 .NET
 
 Project title: Workshop Finder
 
-Requirements:
+Project Requirements:
+- C# / XAML
+- Visual Studio 2017
+- Windows 10 UWP App (Windows 10, version 1809 (10.0; Build 17763)
+- .NET Core 2.1 (do not use .NET Framework)
+- Database CRUD operations, against Donau database
+- Able to open all source from one solution file 
+- Run project in Debug mode by hitting F5
+- Do not use any 3rd party components
+
+Requirements to run the applicaiton:
 - To get the full potential of the application you need to sign in as an administrator. If you register
 through the application you will register as a user, therefor there is not possible to register as an
 administrator yourself.
-
-
 - To use the application, you need to be connected to the HiOf internet directly or via VPN. The
 application uses the Donau database and won’t work without the schools internet.
 - The log files are created in installation folder for the application, the path should be:
